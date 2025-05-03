@@ -56,7 +56,7 @@
   </style>
 </head>
 <body>
-  <div id="version">Version v.3</div>
+  <div id="version">v.4</div>
   <h1>Big Number Calculator</h1>
 
   <div>
@@ -91,7 +91,7 @@
         if (op === 'factorial') {
           let n = BigInt(num1);
           if (n < 0n) return display("Factorial not defined for negatives.");
-          if (n > 100000n) {
+          if (n > 71418n) {
             const approx = stirlingApproximation(Number(n));
             return display(formatBig(approx, useSci), approx.toFixed(0).length, true);
           }
