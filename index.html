@@ -91,7 +91,7 @@
         if (op === 'factorial') {
           let n = BigInt(num1);
           if (n < 0n) return display("Factorial not defined for negatives.");
-          if (n > 71418n) {
+          if (n > 100000n) {
             const approx = stirlingApproximation(Number(n));
             return display(formatBig(approx, useSci), approx.toFixed(0).length, true);
           }
